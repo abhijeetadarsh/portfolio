@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Image from "next/image";
 
 export default function ProjectsSection() {
   return (
@@ -24,7 +25,7 @@ export default function ProjectsSection() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <img
+                <Image
                   src="/placeholder.svg?height=200&width=400"
                   alt={`Project ${project}`}
                   className="w-full h-48 object-cover rounded-md mb-4"
