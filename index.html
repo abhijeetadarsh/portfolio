@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abhijeet Adarsh — Backend Engineer</title>
+<meta name="description" content="Backend engineer who ships production LLM systems — agent orchestration, hybrid vector and graph retrieval, live API integration. Bengaluru, India. Open to fully remote roles.">
+<meta name="author" content="Abhijeet Adarsh">
+<link rel="canonical" href="https://abhijeetadarsh.github.io/">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0F172A">
+
+<!-- social preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Abhijeet Adarsh — Backend Engineer">
+<meta property="og:description" content="Backend engineer who ships production LLM systems. Open to fully remote roles.">
+<meta property="og:url" content="https://abhijeetadarsh.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@adarsh_abhijeet">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230F172A'/><text y='72' x='50' text-anchor='middle' font-size='62' font-family='monospace' font-weight='700' fill='%234C93FF'>a</text></svg>">
+<link rel="stylesheet" href="assets/styles.css">
+
+<script>
+  /* Opt in to scroll-reveal before first paint. Without JS, without
+     IntersectionObserver, or with reduced motion requested, this class is never
+     added and every .reveal element simply renders — no flash, nothing hidden. */
+  (function (h) {
+    try {
+      if ('IntersectionObserver' in window &&
+          !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        h.className += ' js-reveal';
+      }
+    } catch (e) { /* leave content visible */ }
+  })(document.documentElement);
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- SVG sprite: icons are drawn once and referenced with <use>. Decorative
+     instances are aria-hidden; standalone controls carry their own label. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <g id="i-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6.2-1.5 6.2-6.7A5.2 5.2 0 0 0 19.9 5a4.9 4.9 0 0 0-.1-3.6s-1.1-.3-3.7 1.4a12.7 12.7 0 0 0-6.6 0C6.9 1.1 5.8 1.4 5.8 1.4A4.9 4.9 0 0 0 5.7 5a5.2 5.2 0 0 0-1.4 3.7c0 5.2 3.2 6.4 6.2 6.7a3.4 3.4 0 0 0-.9 2.6V22" transform="translate(0,1)"/></g>
+    <g id="i-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></g>
+    <g id="i-x"><path d="M18 2h3l-7.5 8.6L22 22h-6.9l-5.4-7-6.2 7H.5l8-9.2L2 2h7l4.9 6.4L18 2zm-1.2 18h1.9L7.3 4H5.2l11.6 16z"/></g>
+    <g id="i-mail"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></g>
+    <g id="i-external"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></g>
+    <g id="i-lock"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></g>
+    <g id="i-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></g>
+    <g id="i-play"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4V8z"/></g>
+    <g id="i-broadcast"><circle cx="12" cy="12" r="2"/><path d="M16.2 7.8a6 6 0 0 1 0 8.4"/><path d="M7.8 16.2a6 6 0 0 1 0-8.4"/><path d="M19.1 4.9a10 10 0 0 1 0 14.2"/><path d="M4.9 19.1a10 10 0 0 1 0-14.2"/></g>
+  </defs>
+</svg>
+
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="#top">abhijeet<span style="color:var(--accent)">.</span>adarsh</a>
+    <button class="nav__toggle" id="nav-toggle" type="button"
+            aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+      <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12"/><path d="M18 6 6 18"/></svg>
+    </button>
+    <nav class="nav__links" id="nav-links" aria-label="Section navigation">
+      <a class="nav__link" href="#work-now">What I do</a>
+      <a class="nav__link" href="#toolkit">Toolkit</a>
+      <a class="nav__link" href="#projects">Projects</a>
+      <a class="nav__link" href="#writing">Writing</a>
+      <a class="nav__link" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============================= HERO ============================= -->
+  <section class="hero" id="top">
+    <div class="container">
+      <p class="hero__meta mono reveal">Bengaluru, India &nbsp;·&nbsp; IST (UTC+5:30)</p>
+
+      <h1 class="hero__name reveal">Abhijeet Adarsh</h1>
+
+      <p class="hero__role reveal">
+        Backend engineer who ships <em>production LLM systems</em>.
+      </p>
+
+      <p class="hero__blurb reveal">
+        Agent orchestration, hybrid vector&nbsp;+&nbsp;graph retrieval and live API
+        integration — on a C/C++, data-structures and graph-algorithms foundation from
+        an Integrated M.Tech in Mathematics and Computing at IIT&nbsp;(ISM)&nbsp;Dhanbad.
+      </p>
+
+      <div class="status reveal">
+        <span class="status__dot" aria-hidden="true"></span>
+        <span class="status__text">
+          <strong>Open to fully remote roles — Backend · Platform · AI Infrastructure</strong>
+          Full CET overlap, US Pacific mornings in my evening. Remote employee or contractor.
+        </span>
+      </div>
+
+      <div class="hero__actions reveal">
+        <a class="btn btn--primary" href="mailto:abhijeetadarsh@proton.me">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-mail"/></svg>
+          Get in touch
+        </a>
+        <a class="btn btn--ghost" href="https://codelog.tomiarb.com" target="_blank" rel="noopener">
+          Read CodeLog
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-external"/></svg>
+        </a>
+      </div>
+
+      <div class="social reveal">
+        <a class="social__link" href="https://github.com/abhijeetadarsh" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-github"/></svg>
+          GitHub
+        </a>
+        <a class="social__link" href="https://www.linkedin.com/in/abhijeet-adarsh/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-linkedin"/></svg>
+          LinkedIn
+        </a>
+        <a class="social__link" href="https://x.com/adarsh_abhijeet" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-x"/></svg>
+          X
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ WHAT I DO ============================ -->
+  <section class="section" id="work-now" aria-labelledby="work-now-h">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__label">What I do</p>
+        <h2 class="section__title" id="work-now-h">The infrastructure side of LLM products</h2>
+        <p class="section__intro">
+          API design, orchestration, retrieval, latency and reliability — rather than
+          model training.
+        </p>
+      </div>
+
+      <div class="role__header reveal">
+        <h3 class="role__title">LTM (LTIMindtree) <span>— Senior Software Engineer</span></h3>
+        <p class="role__dates mono">Jul 2025 — present · Bengaluru</p>
+      </div>
+
+      <div class="services">
+        <article class="service reveal">
+          <p class="service__num mono">Service 01</p>
+          <h4 class="service__title">Agent orchestration</h4>
+          <p class="service__body">
+            LangGraph workflows behind a manager agent, with a
+            <strong>critique-and-reflect loop</strong> that scores every draft answer and
+            re-drafts the weak ones.
+          </p>
+          <p class="service__body">
+            Its request planner maps a natural-language ask to an ordered sequence of
+            internal REST calls, generates the payloads, and executes them against live
+            company systems — so the assistant reaches past static documents.
+          </p>
+        </article>
+
+        <article class="service reveal">
+          <p class="service__num mono">Service 02</p>
+          <h4 class="service__title">Hybrid retrieval</h4>
+          <p class="service__body">
+            Fuses <strong>vector and graph retrieval</strong> with cross-encoder re-ranking
+            and chunk balancing.
+          </p>
+          <p class="service__body">
+            The whole retrieval path is config-driven — vector-to-graph mix, re-ranking,
+            chunk budgets — so onboarding a new use case is a config change rather than a
+            code change.
+          </p>
+        </article>
+      </div>
+
+      <p class="note reveal">
+        The maths half of the degree is why this work is defensible rather than copied:
+        numerical methods, linear algebra and graph theory are what a re-ranker is
+        actually made of.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================= TOOLKIT ============================= -->
+  <section class="section" id="toolkit" aria-labelledby="toolkit-h">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__label">Toolkit</p>
+        <h2 class="section__title" id="toolkit-h">What I reach for</h2>
+      </div>
+
+      <div class="tier reveal">
+        <p class="tier__label">Core</p>
+        <p class="tier__hint">Questioned on any of these for five minutes, I hold up.</p>
+        <ul class="chips">
+          <li class="chip chip--core mono">Python</li>
+          <li class="chip chip--core mono">C++</li>
+          <li class="chip chip--core mono">FastAPI</li>
+          <li class="chip chip--core mono">LangGraph</li>
+          <li class="chip chip--core mono">RAG / Graph RAG</li>
+          <li class="chip chip--core mono">hybrid retrieval</li>
+          <li class="chip chip--core mono">re-ranking</li>
+          <li class="chip chip--core mono">vector + graph DBs</li>
+          <li class="chip chip--core mono">REST API design</li>
+          <li class="chip chip--core mono">PostgreSQL</li>
+          <li class="chip chip--core mono">Redis</li>
+          <li class="chip chip--core mono">Docker</li>
+          <li class="chip chip--core mono">Linux</li>
+          <li class="chip chip--core mono">Git</li>
+          <li class="chip chip--core mono">DSA &amp; graph algorithms</li>
+        </ul>
+      </div>
+
+      <div class="tier reveal">
+        <p class="tier__label">Also shipped</p>
+        <p class="tier__hint">Real projects behind each of these, listed below.</p>
+        <ul class="chips">
+          <li class="chip mono">TypeScript</li>
+          <li class="chip mono">Node.js</li>
+          <li class="chip mono">Fastify</li>
+          <li class="chip mono">Next.js</li>
+          <li class="chip mono">React</li>
+          <li class="chip mono">Prisma</li>
+          <li class="chip mono">Socket.IO</li>
+          <li class="chip mono">Flutter</li>
+          <li class="chip mono">Kotlin</li>
+          <li class="chip mono">Spring Boot</li>
+          <li class="chip mono">Playwright</li>
+          <li class="chip mono">Kubernetes</li>
+          <li class="chip mono">Jenkins</li>
+          <li class="chip mono">Rust</li>
+          <li class="chip mono">Go</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= PROJECTS ============================= -->
+  <section class="section" id="projects" aria-labelledby="projects-h">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__label">Selected work</p>
+        <h2 class="section__title" id="projects-h">Things I have built</h2>
+        <p class="section__intro">
+          Most of this lives in private repositories — happy to walk through any of it
+          on a call.
+        </p>
+      </div>
+
+      <!-- ---------- backend & infrastructure ---------- -->
+      <div class="group">
+        <h3 class="group__label mono reveal">Backend &amp; infrastructure</h3>
+        <div class="grid">
+
+          <article class="card reveal">
+            <div class="card__top"><h4 class="card__title">Chess analysis server</h4></div>
+            <p class="card__stack mono">Python 3.12 · FastAPI · Stockfish · React · SQLite · Jenkins</p>
+            <ul class="tags">
+              <li class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><use href="#i-lock"/></svg>private</li>
+              <!-- DEMO TODO: replace this <li> with a linked one, see README.md -->
+              <li class="tag tag--demo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><use href="#i-play"/></svg>demo soon</li>
+            </ul>
+            <p class="card__desc">
+              Streams per-move analysis from a live Stockfish process, classifies each move
+              and scores accuracy from Win% deltas. User accounts on SQLite, OpenAPI docs,
+              Jenkins CI. <strong>The clearest proof that I build real services</strong> —
+              streaming responses, an external engine process under management, auth, a
+              frontend and a pipeline.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__top"><h4 class="card__title">testing-framework</h4></div>
+            <p class="card__stack mono">Python · Kubernetes · SSH</p>
+            <ul class="tags">
+              <li class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><use href="#i-lock"/></svg>private</li>
+            </ul>
+            <p class="card__desc">
+              An API test harness that attributes <strong>Kubernetes pod logs to the
+              individual request that produced them</strong> — it bookmarks a
+              <code class="mono">--tail=0</code> stream per pod over SSH and slices the
+              window per request. Built because “which of these 200 concurrent requests
+              wrote that traceback?” had no good answer.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__top"><h4 class="card__title">ugc-studio</h4></div>
+            <p class="card__stack mono">FastAPI · microservices · Playwright · MCP</p>
+            <ul class="tags">
+              <li class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><use href="#i-lock"/></svg>private</li>
+              <!-- DEMO TODO -->
+              <li class="tag tag--demo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><use href="#i-play"/></svg>demo soon</li>
+            </ul>
+            <p class="card__desc">
+              URL → asset-kit orchestrator. A <strong>provider layer routes each task</strong>
+              to whichever model backend suits it, with per-input-type pipeline stages and
+              MCP as an alternative transport — the same shape as an LLM gateway.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__top">
+              <h4 class="card__title"><a href="https://github.com/abhijeetadarsh/a8" target="_blank" rel="noopener">arch-setup</a></h4>
+              <svg class="card__ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-external"/></svg>
+            </div>
+            <p class="card__stack mono">Python · Bash · i3</p>
+            <p class="card__desc">
+              An Arch Linux installer split into a <strong>system layer</strong> — partitions,
+              filesystems, kernel, bootloader; hard, risky, done once — and a
+              <strong>user layer</strong> of packages and stowed dotfiles you re-run forever.
+              The README argues the split rather than just shipping it.
+            </p>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ---------- products ---------- -->
+      <div class="group">
+        <h3 class="group__label mono reveal">Products, end to end</h3>
+        <div class="grid">
+
+          <article class="card reveal">
+            <div class="card__top"><h4 class="card__title">Barbarian</h4></div>
+            <p class="card__stack mono">Fastify 5 · TypeScript · Prisma · PostgreSQL · Redis · Socket.IO · Flutter · Next.js</p>
+            <ul class="tags">
+              <li class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><use href="#i-lock"/></svg>private</li>
+              <!-- DEMO TODO -->
+              <li class="tag tag--demo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><use href="#i-play"/></svg>demo soon</li>
+            </ul>
+            <p class="card__desc">
+              A salon booking platform, and a complete product rather than a demo: Fastify
+              API, Flutter apps for customers and staff, a Next.js owner dashboard, its own
+              design system. Scoped against <strong>four real problems a salon has</strong> —
+              double-booking, walk-in crowding, no-shows, and staff losing hours to the phone.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__top"><h4 class="card__title">Spark</h4></div>
+            <p class="card__stack mono">Flutter · Node · PostgreSQL · Socket.IO · JWT</p>
+            <ul class="tags">
+              <li class="tag tag--role"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><use href="#i-users"/></svg>contributor</li>
+              <li class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><use href="#i-lock"/></svg>private</li>
+              <!-- DEMO TODO -->
+              <li class="tag tag--demo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><use href="#i-play"/></svg>demo soon</li>
+            </ul>
+            <p class="card__desc">
+              A dating app — Android and web from a single Flutter codebase over a
+              Node/PostgreSQL backend, with real-time chat on Socket.IO, JWT and refresh
+              tokens, and location-based matching.
+            </p>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ---------- systems & tooling ---------- -->
+      <div class="group">
+        <h3 class="group__label mono reveal">Systems &amp; tooling</h3>
+        <div class="grid">
+
+          <article class="card reveal">
+            <div class="card__top">
+              <h4 class="card__title"><a href="https://github.com/abhijeetadarsh/cp-toolkit" target="_blank" rel="noopener">cp-toolkit</a></h4>
+              <svg class="card__ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-external"/></svg>
+            </div>
+            <p class="card__stack mono">C++ · Python</p>
+            <p class="card__desc">
+              A configurable C++ header inliner and minifier that bundles a multi-file
+              solution into one submittable source, plus a data-structure library — Fenwick
+              tree, segment tree, UFDS, PBDS.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__top">
+              <h4 class="card__title"><a href="https://github.com/romeosarkar10x/LCHATTER" target="_blank" rel="noopener">LCHATTER</a></h4>
+              <svg class="card__ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-external"/></svg>
+            </div>
+            <p class="card__stack mono">C++ · UDP sockets · Dear ImGui</p>
+            <p class="card__desc">
+              Serverless LAN chat with its own message serialization, layered so networking,
+              protocol and UI stay independently testable.
+            </p>
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================= WRITING ============================= -->
+  <section class="section" id="writing" aria-labelledby="writing-h">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__label">Writing</p>
+        <h2 class="section__title" id="writing-h">CodeLog</h2>
+        <p class="section__intro">
+          Remote work is written work. I write about the parts of the craft that are hard
+          to google.
+        </p>
+      </div>
+
+      <div class="writing">
+        <article class="card reveal">
+          <div class="card__top">
+            <h4 class="card__title"><a href="https://codelog.tomiarb.com" target="_blank" rel="noopener">codelog.tomiarb.com</a></h4>
+            <svg class="card__ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-external"/></svg>
+          </div>
+          <p class="card__stack mono">Pelican · Python · Pagefind</p>
+          <ul class="tags">
+            <li class="tag tag--live"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><use href="#i-broadcast"/></svg>live</li>
+          </ul>
+          <p class="card__desc">
+            Built on a custom pipeline that turns Jupyter notebooks and Markdown into posts
+            with a Pagefind search index — including a VS Code extension that automates the
+            notebook metadata headers the pipeline depends on.
+          </p>
+        </article>
+
+        <div class="reveal">
+          <p class="tier__label">Recent ground covered</p>
+          <ul class="posts">
+            <li>Name binding vs copying</li>
+            <li>The mutable-default argument trap</li>
+            <li><code class="mono">__init__</code> is an initializer, not a constructor</li>
+            <li>LEGB scope and closures</li>
+            <li>Protocols vs ABCs</li>
+            <li>Iterators and generators</li>
+            <li>Absolute vs relative imports</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= CONTACT ============================= -->
+  <section class="section" id="contact" aria-labelledby="contact-h">
+    <div class="container contact">
+      <div class="section__head reveal">
+        <p class="section__label">Contact</p>
+        <h2 class="contact__title" id="contact-h">Hiring for backend, platform or AI infrastructure?</h2>
+        <p class="contact__blurb">
+          I read everything and reply. If you would rather see the work first, the blog is
+          the better entry point than the GitHub profile.
+        </p>
+      </div>
+
+      <div class="contact__grid reveal">
+        <div>
+          <p class="fact__label mono">Email</p>
+          <p class="fact__value"><a href="mailto:abhijeetadarsh@proton.me">abhijeetadarsh@proton.me</a></p>
+        </div>
+        <div>
+          <p class="fact__label mono">Based in</p>
+          <p class="fact__value">Bengaluru, India — IST (UTC+5:30)</p>
+        </div>
+        <div>
+          <p class="fact__label mono">Overlap</p>
+          <p class="fact__value">Full CET · US Pacific mornings in my evening</p>
+        </div>
+        <div>
+          <p class="fact__label mono">Engagement</p>
+          <p class="fact__value">Remote employee or contractor</p>
+        </div>
+      </div>
+
+      <div class="hero__actions reveal">
+        <a class="btn btn--primary" href="mailto:abhijeetadarsh@proton.me">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-mail"/></svg>
+          abhijeetadarsh@proton.me
+        </a>
+        <a class="btn btn--ghost" href="https://www.linkedin.com/in/abhijeet-adarsh/" target="_blank" rel="noopener">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-linkedin"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer container">
+  <p>© <span id="year">2026</span> Abhijeet Adarsh</p>
+  <p>Built from scratch — no framework, no build step.</p>
+</footer>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>
